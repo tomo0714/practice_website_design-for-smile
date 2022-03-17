@@ -1,8 +1,12 @@
 import Link from "next/link";
+import styles from "src/styles/Header.module.css";
 
 export const Header = () => {
   const NAV_ITEMS = [
-    { href: "/", label: <img src="./images/グループ 8.png" alt="シンボル" /> },
+    {
+      href: "/",
+      label: <img src="src/images/グループ 8.png" alt="シンボル" />,
+    },
     { href: "/about", label: "About us" },
     { href: "/#", label: "Works" },
     { href: "/#", label: "Culuture" },
@@ -11,8 +15,8 @@ export const Header = () => {
   ];
 
   return (
-    <header class="header">
-      <h1 class="header__logo">
+    <header>
+      <h1 className={styles.logo}>
         <a href="">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -44,19 +48,19 @@ export const Header = () => {
           </svg>
         </a>
       </h1>
-      <button class="burger-btn">
-        <span class="burger-btn__bars">
-          <span class="burger-btn__bar burger-btn__bar--top"></span>
-          <span class="burger-btn__bar burger-btn__bar--middle"></span>
-          <span class="burger-btn__bar burger-btn__bar--bottom"></span>
+      <button className={styles.btn}>
+        <span className={styles.bars}>
+          <span className={styles.top}></span>
+          <span className={styles.middle}></span>
+          <span className={styles.bottom}></span>
         </span>
-        <p class="burger-btn__menu">menu</p>
+        <p className={styles.menu}>menu</p>
       </button>
-      <nav class="burger-menu">
-        <ul class="burger-menu__list">
+      <nav className={styles.menu}>
+        <ul className={styles.list}>
           {NAV_ITEMS.map((item) => {
             return (
-              <li class="burger-menu__item">
+              <li className={styles.item}>
                 <Link key={item.href} href={item.href}>
                   <a>{item.label}</a>
                 </Link>
@@ -65,7 +69,7 @@ export const Header = () => {
           })}
         </ul>
       </nav>
-      <span class="burger-bg"></span>
+      <span className={styles.bg}></span>
     </header>
   );
 };

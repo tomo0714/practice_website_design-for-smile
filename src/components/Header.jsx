@@ -1,4 +1,15 @@
+import Link from "next/link";
+
 export const Header = () => {
+  const NAV_ITEMS = [
+    { href: "/", label: <img src="./images/グループ 8.png" alt="シンボル" /> },
+    { href: "/about", label: "About us" },
+    { href: "/#", label: "Works" },
+    { href: "/#", label: "Culuture" },
+    { href: "/#", label: "Topics" },
+    { href: "/contact", label: "Contact" },
+  ];
+
   return (
     <header class="header">
       <h1 class="header__logo">
@@ -43,26 +54,15 @@ export const Header = () => {
       </button>
       <nav class="burger-menu">
         <ul class="burger-menu__list">
-          <li class="burger-menu__item">
-            <a href="./index.html">
-              <img src="./images/グループ 8.png" alt="シンボル" />
-            </a>
-          </li>
-          <li class="burger-menu__item">
-            <a href="./about.html">About us</a>
-          </li>
-          <li class="burger-menu__item">
-            <a href="#!">Works</a>
-          </li>
-          <li class="burger-menu__item">
-            <a href="#!">Culuture</a>
-          </li>
-          <li class="burger-menu__item">
-            <a href="#!">Topics</a>
-          </li>
-          <li class="burger-menu__item">
-            <a href="./contact.html">Contact</a>
-          </li>
+          {NAV_ITEMS.map((item) => {
+            return (
+              <li class="burger-menu__item">
+                <Link key={item.href} href={item.href}>
+                  <a>{item.label}</a>
+                </Link>
+              </li>
+            );
+          })}
         </ul>
       </nav>
       <span class="burger-bg"></span>

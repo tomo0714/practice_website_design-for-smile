@@ -1,0 +1,39 @@
+import styles from "src/styles/FirstView.module.css";
+
+export const FirstView = (props) => {
+  return (
+    <div className={styles.fv}>
+      <div className={styles.img}>
+        <div className={styles.inner}>
+          {props.id === "Index" ? (
+            <>
+              {" "}
+              <p className={styles.text}>
+                デザインで人を笑顔にする社会
+                <br />
+                DIGSMILE INC.
+              </p>
+              <h2 className={styles.title}>
+                Design
+                <br />
+                for
+                <br />
+                smile.
+              </h2>
+            </>
+          ) : props.id === "About" ? (
+            <>
+              <h2 className="fv__title">About US</h2>
+              <p className="fv__text">DIGSMILEについて</p>
+            </>
+          ) : props.id === "Contact" ? (
+            <>
+              <h2 className="fv__title">Contact</h2>
+              <p className="fv__text">お問い合わせ</p>
+            </>
+          ) : null}
+        </div>
+      </div>
+    </div>
+  );
+};

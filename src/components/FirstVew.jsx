@@ -23,13 +23,13 @@ export const FirstView = (props) => {
             </>
           ) : props.id === "About" ? (
             <>
-              <h2 className="fv__title">About US</h2>
-              <p className="fv__text">DIGSMILEについて</p>
+              <h2 className={styles.title}>About US</h2>
+              <p className={styles.text}>DIGSMILEについて</p>
             </>
           ) : props.id === "Contact" ? (
             <>
-              <h2 className="fv__title">Contact</h2>
-              <p className="fv__text">お問い合わせ</p>
+              <h2 className={styles.title}>Contact</h2>
+              <p className={styles.text}>お問い合わせ</p>
             </>
           ) : null}
         </div>

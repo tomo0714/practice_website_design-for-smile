@@ -1,8 +1,5 @@
-import Head from "next/head";
-import Image from "next/image";
-import { Footer } from "../components/Footer";
-import { Header } from "../components/Header";
-import styles from "../styles/Home.module.css";
+import { Footer } from "src/components/Footer";
+import { Header } from "src/components/Header";
 
 export default function About() {
   return (

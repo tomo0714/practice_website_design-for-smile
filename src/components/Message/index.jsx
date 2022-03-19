@@ -1,4 +1,4 @@
-import styles from "src/styles/Message.module.css";
+import styles from "src/components/Message/Message.module.css";
 
 export const Message = () => {
   return (

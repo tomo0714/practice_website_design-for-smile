@@ -1,4 +1,4 @@
-import styles from "src/styles/FirstView.module.css";
+import styles from "src/components/FirstView/FirstView.module.css";
 
 export const FirstView = (props) => {
   return (
@@ -7,7 +7,6 @@ export const FirstView = (props) => {
         <div className={styles.inner}>
           {props.id === "Index" ? (
             <>
-              {" "}
               <p className={styles.text}>
                 デザインで人を笑顔にする社会
                 <br />

@@ -1,5 +1,5 @@
-import { Company } from "src/components/Campany";
-import { FirstView } from "src/components/FirstVew";
+import { Company } from "src/components/Company";
+import { FirstView } from "src/components/FirstView";
 import { Footer } from "src/components/Footer";
 import { Header } from "src/components/Header";
 import { Message } from "src/components/Message";

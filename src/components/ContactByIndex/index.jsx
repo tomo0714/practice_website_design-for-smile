@@ -1,5 +1,5 @@
 import Link from "next/link";
-import styles from "src/styles/ContactByIndex.module.css";
+import styles from "src/components/ContactByIndex/ContactByIndex.module.css";
 
 export const ContactByIndex = () => {
   return (

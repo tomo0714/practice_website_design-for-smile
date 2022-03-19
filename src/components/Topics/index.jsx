@@ -1,4 +1,4 @@
-import styles from "src/styles/Topics.module.css";
+import styles from "src/components/Topics/Topics.module.css";
 
 export const Topics = () => {
   return (

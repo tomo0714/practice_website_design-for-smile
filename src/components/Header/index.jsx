@@ -1,5 +1,5 @@
 import Link from "next/link";
-import styles from "src/styles/Header.module.css";
+import styles from "src/components/Header/Header.module.css";
 
 export const Header = () => {
   const NAV_ITEMS = [

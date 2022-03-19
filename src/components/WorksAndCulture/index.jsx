@@ -1,4 +1,4 @@
-import styles from "src/styles/WorksAndCulture.module.css";
+import styles from "src/components/WorksAndCulture/WorksAndCulture.module.css";
 
 export const WorksAndCulture = () => {
   return (

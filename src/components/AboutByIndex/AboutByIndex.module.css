@@ -19,7 +19,7 @@
 }
 
 .bg {
-  background-image: url(../images/about-img@2x-min.png);
+  /* background-image: url("src/images/about-img@2x-min.png"); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

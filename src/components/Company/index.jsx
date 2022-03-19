@@ -1,4 +1,4 @@
-import styles from "src/styles/Company.module.css";
+import styles from "src/components/Company/Company.module.css";
 
 export const Company = () => {
   return (

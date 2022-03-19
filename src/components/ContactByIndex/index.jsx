@@ -21,7 +21,7 @@ export const ContactByIndex = () => {
           <div className={styles.img_wrapper}>
             <img
               className={styles.img}
-              src={"src/images/recruit-img@2x-min.png"}
+              src={"images/recruit-img@2x-min.png"}
               alt=""
             />
           </div>

@@ -10,7 +10,7 @@ export const WorksAndCulture = () => {
             <figure className={styles.img_wrapper}>
               <img
                 className={styles.img}
-                src="src/images/daria-shevtsova-k_RYBedEvDw-unsplash@2x-min.png"
+                src="images/daria-shevtsova-k_RYBedEvDw-unsplash@2x-min.png"
                 alt=""
               />
             </figure>
@@ -24,7 +24,7 @@ export const WorksAndCulture = () => {
             <figure className={styles.img_wrapper}>
               <img
                 className={styles.img}
-                src="src/images/culture-img@2x-min.png"
+                src="images/culture-img@2x-min.png"
                 alt=""
               />
             </figure>

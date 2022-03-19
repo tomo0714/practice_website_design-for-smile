@@ -23,7 +23,7 @@ export const Message = () => {
             </p>
           </div>
           <figure className={styles.img_wrapper}>
-            <img className="styles.img" src="src/images/ceo-img.png" alt="" />
+            <img className="styles.img" src="images/ceo-img.png" alt="" />
           </figure>
         </div>
       </div>

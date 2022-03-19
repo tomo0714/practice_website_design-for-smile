@@ -1,19 +1,7 @@
-import Link from "next/link";
 import styles from "src/components/Header/Header.module.css";
+import { Menu } from "src/components/Menu";
 
 export const Header = () => {
-  const NAV_ITEMS = [
-    {
-      href: "/",
-      label: <img src="src/images/グループ 8.png" alt="シンボル" />,
-    },
-    { href: "/about", label: "About us" },
-    { href: "/#", label: "Works" },
-    { href: "/#", label: "Culuture" },
-    { href: "/#", label: "Topics" },
-    { href: "/contact", label: "Contact" },
-  ];
-
   return (
     <header>
       <h1 className={styles.logo}>
@@ -48,27 +36,7 @@ export const Header = () => {
           </svg>
         </a>
       </h1>
-      <button className={styles.btn}>
-        <span className={styles.bars}>
-          <span className={styles.top}></span>
-          <span className={styles.middle}></span>
-          <span className={styles.bottom}></span>
-        </span>
-        <p className={styles.menu}>menu</p>
-      </button>
-      <nav className={styles.menu}>
-        <ul className={styles.list}>
-          {NAV_ITEMS.map((item) => {
-            return (
-              <li className={styles.item}>
-                <Link key={item.href} href={item.href}>
-                  <a>{item.label}</a>
-                </Link>
-              </li>
-            );
-          })}
-        </ul>
-      </nav>
+      <Menu />
       <span className={styles.bg}></span>
     </header>
   );

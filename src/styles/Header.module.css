@@ -178,18 +178,3 @@ body.noscroll {
   -webkit-transition: color 0.3s;
   transition: color 0.3s;
 }
-
-/* フッター
---------------------------------------------------------------- */
-/* footer {
-  background-color: #525252;
-  height: 50px;
-  text-align: center;
-}
-
-footer small {
-  font-size: 1rem;
-  color: #fff;
-  line-height: 50px;
-} */
-/*# sourceMappingURL=style.css.map */

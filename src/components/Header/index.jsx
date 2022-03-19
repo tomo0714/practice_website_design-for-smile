@@ -17,7 +17,7 @@ export const Header = () => {
   return (
     <header>
       <h1 className={styles.logo}>
-        <a href="">
+        <a href="/">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="260"

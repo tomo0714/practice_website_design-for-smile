@@ -5,9 +5,8 @@ import { Footer } from "src/components/Footer";
 import { Header } from "src/components/Header";
 import { Topics } from "src/components/Topics";
 import { WorksAndCulture } from "src/components/WorksAndCulture";
-import Contact from "src/pages/contact";
 
-export default function Home() {
+function Index() {
   return (
     <div>
       <Header />
@@ -22,3 +21,5 @@ export default function Home() {
     </div>
   );
 }
+
+export default Index;

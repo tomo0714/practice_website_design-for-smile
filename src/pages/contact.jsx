@@ -2,7 +2,7 @@ import { FirstView } from "src/components/FirstVew";
 import { Footer } from "src/components/Footer";
 import { Header } from "src/components/Header";
 
-export default function Contact() {
+function Contact() {
   return (
     <div>
       <Header />
@@ -124,3 +124,5 @@ export default function Contact() {
     </div>
   );
 }
+
+export default Contact;

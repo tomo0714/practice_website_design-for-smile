@@ -1,4 +1,6 @@
 import Head from "next/head";
+import { Footer } from "src/components/Footer";
+import { Header } from "src/components/Header";
 import "src/styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
@@ -11,7 +13,9 @@ function MyApp({ Component, pageProps }) {
           content="DIGSMILEは、デザインで人を豊かにする社会。なんでもない日常に少しのワクワクと遊び心を提供します。"
         />
       </Head>
+      <Header />
       <Component {...pageProps} />
+      <Footer />
     </>
   );
 }

@@ -3,8 +3,8 @@ import styles from "src/components/AboutByIndex/AboutByIndex.module.css";
 
 export const AboutByIndex = () => {
   return (
-    <section className={styles.about}>
-      <div className={`${styles.inner} ${styles.bg}`}>
+    <section className={`${styles.about} ${styles.bg}`}>
+      <div className={styles.inner}>
         <div className={styles.box}>
           <h2 className={styles.title}>About us</h2>
           <p className={styles.text}>

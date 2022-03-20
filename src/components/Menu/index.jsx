@@ -5,7 +5,7 @@ import styles from "src/components/Menu/Menu.module.css";
 
 export const Menu = () => {
   const [name, setName] = useState(false);
-  const hundleClick = () => setName(!name);
+  const handleClick = () => setName(!name);
   const NAV_ITEMS = [
     {
       id: 1,
@@ -40,7 +40,7 @@ export const Menu = () => {
   ];
   return (
     <>
-      <Button name={name} hundleClick={hundleClick} />
+      <Button name={name} handleClick={handleClick} />
       <nav className={`${styles.menu} ${name ? styles.open : null}`}>
         <ul className={styles.list}>
           {NAV_ITEMS.map((item) => {

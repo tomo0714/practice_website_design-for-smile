@@ -2,7 +2,7 @@ import styles from "src/components/Button/Button.module.css";
 
 export const Button = (props) => {
   return (
-    <button onClick={props.hundleClick} className={styles.btn}>
+    <button onClick={props.handleClick} className={styles.btn}>
       <span className={styles.bars}>
         <span
           className={`${styles.bar} ${props.name ? styles.cross : null} ${

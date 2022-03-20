@@ -1,8 +1,11 @@
 import Link from "next/link";
+import { useState } from "react";
 import { Button } from "src/components/Button";
 import styles from "src/components/Menu/Menu.module.css";
 
 export const Menu = () => {
+  const [name, setName] = useState(false);
+  const hundleClick = () => setName(!name);
   const NAV_ITEMS = [
     {
       id: 1,
@@ -37,9 +40,8 @@ export const Menu = () => {
   ];
   return (
     <>
-      <Button />
-      <nav className={styles.menu}>
-        {/* <nav className={`${styles.menu} ${styles.open}`}> */}
+      <Button name={name} hundleClick={hundleClick} />
+      <nav className={`${styles.menu} ${name ? styles.open : null}`}>
         <ul className={styles.list}>
           {NAV_ITEMS.map((item) => {
             return (

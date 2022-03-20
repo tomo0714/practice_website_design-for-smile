@@ -1,12 +1,24 @@
 import styles from "src/components/Button/Button.module.css";
 
-export const Button = () => {
+export const Button = (props) => {
   return (
-    <button className={styles.btn}>
+    <button onClick={props.hundleClick} className={styles.btn}>
       <span className={styles.bars}>
-        <span className={`${styles.bar} ${styles.top}`}></span>
-        <span className={`${styles.bar} ${styles.middle}`}></span>
-        <span className={`${styles.bar} ${styles.bottom}`}></span>
+        <span
+          className={`${styles.bar} ${props.name ? styles.cross : null} ${
+            styles.top
+          }`}
+        ></span>
+        <span
+          className={`${styles.bar} ${props.name ? styles.cross : null} ${
+            styles.middle
+          }`}
+        ></span>
+        <span
+          className={`${styles.bar} ${props.name ? styles.cross : null} ${
+            styles.bottom
+          }`}
+        ></span>
       </span>
       <p className={styles.menu}>menu</p>
     </button>

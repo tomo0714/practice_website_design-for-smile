@@ -1,11 +1,7 @@
 import { Main } from "src/components/Main";
 
 function Contact() {
-  return (
-    <div>
-      <Main id="Contact" />
-    </div>
-  );
+  return <Main id="Contact" />;
 }
 
 export default Contact;

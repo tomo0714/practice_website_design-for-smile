@@ -1,11 +1,7 @@
 import { Main } from "src/components/Main";
 
 function Index() {
-  return (
-    <div>
-      <Main id="Index" />
-    </div>
-  );
+  return <Main id="Index" />;
 }
 
 export default Index;

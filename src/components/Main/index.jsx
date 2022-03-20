@@ -27,9 +27,7 @@ export const Main = (props) => {
           <Company />
         </>
       ) : id === "Contact" ? (
-        <>
-          <Form />
-        </>
+        <Form />
       ) : null}
       ;
     </main>

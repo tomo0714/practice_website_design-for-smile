@@ -15,12 +15,13 @@ export const Form = () => {
           <li className={styles.radio__item}>
             <input
               type="radio"
-              className={styles.radio__item}
+              className={styles.radio__btn}
               name="radio__btn"
               id="request"
-              checked
+              // checked
             />
-            <label for="request">製作依頼</label>
+            <label>製作依頼</label>
+            {/* <label for="request">製作依頼</label> */}
           </li>
           <li className={styles.radio__item}>
             <input
@@ -29,7 +30,8 @@ export const Form = () => {
               name="radio__btn"
               id="recruit"
             />
-            <label for="recruit">採用</label>
+            <label>採用</label>
+            {/* <label for="recruit">採用</label> */}
           </li>
           <li className={styles.radio__item}>
             <input
@@ -38,7 +40,8 @@ export const Form = () => {
               name="radio__btn"
               id="ir"
             />
-            <label for="ir">IR</label>
+            <label>IR</label>
+            {/* <label for="ir">IR</label> */}
           </li>
           <li className={styles.radio__item}>
             <input
@@ -47,7 +50,8 @@ export const Form = () => {
               name="radio__btn"
               id="other"
             />
-            <label for="other">その他</label>
+            <label>その他</label>
+            {/* <label for="other">その他</label> */}
           </li>
         </ul>
         <p className={styles.title}>会社名・団体名</p>

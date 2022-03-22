@@ -1,0 +1,25 @@
+.table {
+  width: 72%;
+  margin-left: auto;
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .table {
+    width: 100%;
+  }
+}
+
+.row {
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.title {
+  line-height: 56px;
+}
+
+.map {
+  width: 100%;
+  overflow: hidden;
+}

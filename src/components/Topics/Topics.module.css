@@ -25,19 +25,19 @@
   }
 }
 
-.post__item {
+.item {
   border-bottom: 1px solid #ddd;
   padding-bottom: 10px;
   margin-bottom: 30px;
 }
 
-.post__date {
+.date {
   color: #cecece;
   font-size: 1rem;
   font-weight: bold;
 }
 
-.post__title {
+.postTitle {
   font-size: 1.4rem;
   color: #333;
   font-weight: bold;
@@ -46,7 +46,7 @@
 }
 
 @media only screen and (max-width: 599px) {
-  .post__title {
+  .postTitle {
     font-size: 1.2rem;
   }
 }

@@ -1,40 +1,37 @@
 import styles from "src/components/WorksAndCulture/WorksAndCulture.module.css";
 
+const WORKSANDCULTURE_ITEMS = [
+  {
+    title: "Works",
+    img: "images/daria-shevtsova-k_RYBedEvDw-unsplash@2x-min.png",
+    text: "DIGSMILEの制作実績を紹介します。",
+  },
+  {
+    title: "Culuture",
+    img: "images/culture-img@2x-min.png",
+    text: "DIGSMILEの社内文化について紹介します。",
+  },
+];
+
 export const WorksAndCulture = () => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.inner}>
         <div className={styles.items}>
-          <section className={styles.item}>
-            <h2 className={styles.title}>Works</h2>
-            <figure className={styles.img_wrapper}>
-              <img
-                className={styles.img}
-                src="images/daria-shevtsova-k_RYBedEvDw-unsplash@2x-min.png"
-                alt=""
-              />
-            </figure>
-            <p className={styles.text}>DIGSMILEの制作実績を紹介します。</p>
-            <a href="#!" className={styles.btn}>
-              read more
-            </a>
-          </section>
-          <section className={styles.item}>
-            <h2 className={styles.title}>Culuture</h2>
-            <figure className={styles.img_wrapper}>
-              <img
-                className={styles.img}
-                src="images/culture-img@2x-min.png"
-                alt=""
-              />
-            </figure>
-            <p className={styles.text}>
-              DIGSMILEの社内文化について紹介します。
-            </p>
-            <a href="#!" className={styles.btn}>
-              read more
-            </a>
-          </section>
+          {WORKSANDCULTURE_ITEMS.map((item) => {
+            return (
+              <section className={styles.item}>
+                <h2 className={styles.title}>{item.title}</h2>
+                <figure className={styles.img}>
+                  <img src={item.img} alt={item.title} />
+                </figure>
+                <p className={styles.text}>{item.text}</p>
+                <a href="#!" className={styles.btn}>
+                  read more
+                </a>
+              </section>
+            );
+          })}
         </div>
       </div>
     </div>

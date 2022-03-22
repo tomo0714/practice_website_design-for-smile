@@ -1,25 +1,30 @@
 import styles from "src/components/Button/Button.module.css";
 
 export const Button = (props) => {
+  const BAR_ITEMS = [
+    {
+      position: styles.top,
+    },
+    {
+      position: styles.middle,
+    },
+    {
+      position: styles.bottom,
+    },
+  ];
   return (
     <button onClick={props.handleClick} className={styles.btn}>
-      <span className={styles.bars}>
-        <span
-          className={`${styles.bar} ${props.name ? styles.cross : null} ${
-            styles.top
-          }`}
-        ></span>
-        <span
-          className={`${styles.bar} ${props.name ? styles.cross : null} ${
-            styles.middle
-          }`}
-        ></span>
-        <span
-          className={`${styles.bar} ${props.name ? styles.cross : null} ${
-            styles.bottom
-          }`}
-        ></span>
-      </span>
+      <div>
+        {BAR_ITEMS.map((item) => {
+          return (
+            <span
+              className={`${styles.bar} ${props.name ? styles.cross : null} ${
+                item.position
+              }`}
+            ></span>
+          );
+        })}
+      </div>
       <p className={styles.menu}>menu</p>
     </button>
   );

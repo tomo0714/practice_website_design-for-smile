@@ -28,37 +28,37 @@
   }
 }
 
-.box__inner {
+.boxInner {
   width: 400px;
   margin: 0 auto;
 }
 
 @media only screen and (max-width: 1024px) {
-  .box__inner {
+  .inner {
     width: 100%;
   }
 }
 
-.box__title {
+.title {
   font-size: 32px;
   text-transform: uppercase;
   font-weight: bold;
   margin-bottom: 30px;
 }
 
-.box__text {
+.text {
   font-size: 1.6rem;
   line-height: 2;
   margin-bottom: 30px;
 }
 
 @media only screen and (max-width: 1024px) {
-  .box__text {
+  .text {
     font-size: 1.4rem;
   }
 }
 
-.img_wrapper {
+.imgWrap {
   position: absolute;
   top: 0;
   left: 30px;
@@ -66,14 +66,14 @@
 }
 
 @media only screen and (max-width: 1024px) {
-  .img-wrapper {
+  .imgWrap {
     left: 20px;
     width: 320px;
   }
 }
 
 @media only screen and (max-width: 599px) {
-  .img-wrapper {
+  .imgWrap {
     left: 0;
   }
 }

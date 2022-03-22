@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { Button } from "src/components/Button";
@@ -10,7 +11,7 @@ export const Menu = () => {
     {
       id: 1,
       href: "/",
-      label: <img src="images/グループ 8.png" alt="シンボル" />,
+      label: <Image src="/images/グループ 8.png" width={50} height={50} />,
     },
     {
       id: 2,

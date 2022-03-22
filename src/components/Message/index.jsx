@@ -1,3 +1,4 @@
+import Image from "next/image";
 import styles from "src/components/Message/Message.module.css";
 
 const BOXTEXT_ITEMS = [
@@ -31,7 +32,7 @@ export const Message = () => {
             })}
           </div>
           <figure className={styles.imgWrap}>
-            <img className="styles.img" src="images/ceo-img.png" alt="" />
+            <Image src="/images/ceo-img.png" width={400} height={270} />
           </figure>
         </div>
       </div>

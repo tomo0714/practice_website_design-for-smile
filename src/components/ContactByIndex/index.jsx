@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import styles from "src/components/ContactByIndex/ContactByIndex.module.css";
 
@@ -18,13 +19,12 @@ export const ContactByIndex = () => {
               <a className={styles.btn}>read more</a>
             </Link>
           </div>
-          <div className={styles.img_wrapper}>
-            <img
-              className={styles.img}
-              src={"images/recruit-img@2x-min.png"}
-              alt=""
-            />
-          </div>
+          <Image
+            src="/images/recruit-img@2x-min.png"
+            width={500}
+            height={300}
+            objectFit="contain"
+          />
         </div>
       </div>
     </section>

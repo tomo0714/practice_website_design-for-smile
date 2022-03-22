@@ -1,0 +1,43 @@
+.radio {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 42px;
+}
+
+@media only screen and (max-width: 599px) {
+  .radio {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+}
+
+.item {
+  margin-right: 50px;
+}
+
+@media only screen and (max-width: 599px) {
+  .item {
+    margin-bottom: 14px;
+  }
+}
+
+.btn {
+  height: 20px;
+  width: 20px;
+  border: 1px solid #333;
+  margin-right: 10px;
+  vertical-align: -4px;
+}

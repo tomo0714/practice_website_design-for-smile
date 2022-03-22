@@ -1,0 +1,22 @@
+.privacy {
+  border: 1px solid #333;
+  border-radius: 2px;
+  padding: 10px;
+  height: 212px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow-y: scroll;
+  margin-bottom: 42px;
+}
+
+.title {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.text {
+  line-height: 1.5;
+  margin-bottom: 30px;
+}

@@ -23,7 +23,11 @@ export const Message = () => {
           <div className={styles.boxInner}>
             <h2 className={styles.title}>CEO MESSAGE</h2>
             {BOXTEXT_ITEMS.map((item) => {
-              return <p className={styles.text}>{item.text}</p>;
+              return (
+                <p key={item.text} className={styles.text}>
+                  {item.text}
+                </p>
+              );
             })}
           </div>
           <figure className={styles.imgWrap}>

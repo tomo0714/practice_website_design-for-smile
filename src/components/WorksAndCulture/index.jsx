@@ -20,7 +20,7 @@ export const WorksAndCulture = () => {
         <div className={styles.items}>
           {WORKSANDCULTURE_ITEMS.map((item) => {
             return (
-              <section className={styles.item}>
+              <section key={item.title} className={styles.item}>
                 <h2 className={styles.title}>{item.title}</h2>
                 <figure className={styles.img}>
                   <img src={item.img} alt={item.title} />

@@ -24,7 +24,9 @@ export const Form = () => {
         {FORM_ITEMS.map((item) => {
           return (
             <>
-              <p className={styles.title}>{item.title}</p>
+              <p key={item.title} className={styles.title}>
+                {item.title}
+              </p>
               {item.content}
             </>
           );

@@ -12,7 +12,7 @@ export const Radio = () => {
     <ul className={styles.radio}>
       {RADIO_ITEMS.map((item) => {
         return (
-          <li className={styles.item}>
+          <li key={item.name} className={styles.item}>
             <input type="radio" className={styles.btn} name={item.name} />
             <label>{item.label}</label>
           </li>

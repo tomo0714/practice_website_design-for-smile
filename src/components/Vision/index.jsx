@@ -22,7 +22,11 @@ export const Vision = () => {
         <h2 className={styles.title}>VISION</h2>
         <h3 className={styles.subtitle}>デザインで人を笑顔にする会社</h3>
         {VISIONTEXT_ITEMS.map((item) => {
-          return <p className={styles.text}>{item.text}</p>;
+          return (
+            <p key={item.text} className={styles.text}>
+              {item.text}
+            </p>
+          );
         })}
       </div>
     </section>

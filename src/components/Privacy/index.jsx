@@ -33,7 +33,11 @@ export const Privacy = () => {
       <h3 className={styles.title}>Privacy Policy</h3>
       <div className={styles.privacy}>
         {PRIVACY_ITEMS.map((item) => {
-          return <p className={styles.text}>{item.text}</p>;
+          return (
+            <p key={item.title} className={styles.text}>
+              {item.text}
+            </p>
+          );
         })}
       </div>
     </>

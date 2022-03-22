@@ -18,6 +18,7 @@ export const Button = (props) => {
         {BAR_ITEMS.map((item) => {
           return (
             <span
+              key={item.position}
               className={`${styles.bar} ${props.name ? styles.cross : null} ${
                 item.position
               }`}

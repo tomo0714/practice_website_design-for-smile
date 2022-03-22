@@ -23,7 +23,7 @@ export const Topics = () => {
         <ul className={styles.post}>
           {POST_ITEMS.map((item) => {
             return (
-              <li className={styles.item}>
+              <li key={item.title} className={styles.item}>
                 <time className={styles.date}>{item.time}</time>
                 <a href="#!" className={styles.postTitle}>
                   {item.title}

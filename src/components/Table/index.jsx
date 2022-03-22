@@ -33,7 +33,7 @@ export const Table = () => {
       <tbody>
         {TABLE_ITEMS.map((item) => {
           return (
-            <tr className={styles.row}>
+            <tr key={item.title} className={styles.row}>
               <th className={styles.title}>{item.title}</th>
               <td className={styles.text}>{item.text}</td>
             </tr>

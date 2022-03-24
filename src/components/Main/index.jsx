@@ -29,7 +29,6 @@ export const Main = (props) => {
       ) : id === "Contact" ? (
         <Form />
       ) : null}
-      ;
     </main>
   );
 };

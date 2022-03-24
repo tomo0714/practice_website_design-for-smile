@@ -21,16 +21,14 @@ export const Message = () => {
     <section className={styles.message}>
       <div className={styles.inner}>
         <div className={styles.box}>
-          <div className={styles.boxInner}>
-            <h2 className={styles.title}>CEO MESSAGE</h2>
-            {BOXTEXT_ITEMS.map((item) => {
-              return (
-                <p key={item.text} className={styles.text}>
-                  {item.text}
-                </p>
-              );
-            })}
-          </div>
+          <h2 className={styles.title}>CEO MESSAGE</h2>
+          {BOXTEXT_ITEMS.map((item) => {
+            return (
+              <p key={item.text} className={styles.text}>
+                {item.text}
+              </p>
+            );
+          })}
           <figure className={styles.imgWrap}>
             <Image src="/images/ceo-img.png" width={400} height={270} />
           </figure>

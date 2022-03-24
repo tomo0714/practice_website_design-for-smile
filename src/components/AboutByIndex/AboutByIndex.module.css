@@ -3,16 +3,6 @@
   margin-top: 120px;
 }
 
-.about::after {
-  content: "";
-  background-color: #f0f0f0;
-  height: 180px;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  z-index: -1;
-}
-
 .inner {
   max-width: 1100px;
   margin: 0 auto;

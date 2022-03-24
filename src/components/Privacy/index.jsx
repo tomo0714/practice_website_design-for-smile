@@ -34,7 +34,7 @@ export const Privacy = () => {
       <div className={styles.privacy}>
         {PRIVACY_ITEMS.map((item) => {
           return (
-            <p key={item.title} className={styles.text}>
+            <p key={item.text} className={styles.text}>
               {item.text}
             </p>
           );

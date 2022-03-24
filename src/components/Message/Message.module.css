@@ -12,25 +12,14 @@
 .box {
   width: 770px;
   margin-left: auto;
-  padding: 120px 20px 90px;
+  padding: 120px 15% 90px;
   background-color: #f0f0f0;
-}
-
-@media only screen and (max-width: 1024px) {
-  .box {
-    width: 494px;
-  }
 }
 
 @media only screen and (max-width: 599px) {
   .box {
     width: auto;
   }
-}
-
-.boxInner {
-  width: 400px;
-  margin: 0 auto;
 }
 
 @media only screen and (max-width: 1024px) {

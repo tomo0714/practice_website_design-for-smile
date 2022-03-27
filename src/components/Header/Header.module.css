@@ -10,15 +10,15 @@
   width: 100%;
 }
 
+.logo.black svg path {
+  fill: #333;
+  -webkit-transition: fill 0.3s;
+  transition: fill 0.3s;
+}
+
 @media only screen and (max-width: 599px) {
   .logo {
     width: 180px;
     top: 20px;
   }
-}
-
-.logo.black svg path {
-  fill: #333;
-  -webkit-transition: fill 0.3s;
-  transition: fill 0.3s;
 }

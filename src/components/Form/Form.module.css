@@ -2,12 +2,6 @@
   padding: 120px 20px;
 }
 
-@media only screen and (max-width: 1024px) {
-  .form {
-    padding: 80px 20px;
-  }
-}
-
 .inner {
   max-width: 700px;
   margin: 0 auto;
@@ -16,18 +10,6 @@
 .text {
   line-height: 1.5;
   margin-bottom: 52px;
-}
-
-@media only screen and (max-width: 1024px) {
-  .text {
-    margin-bottom: 18px;
-  }
-}
-
-@media only screen and (max-width: 599px) {
-  .text {
-    margin-bottom: 48px;
-  }
 }
 
 .title {
@@ -64,22 +46,6 @@
 }
 .title:nth-of-type(7):after {
   left: 148px;
-}
-
-@media only screen and (max-width: 1024px) {
-  .title:nth-of-type(2):after {
-    left: 131px;
-  }
-
-  .title:nth-of-type(4):after {
-    left: 61px;
-  }
-  .title:nth-of-type(5):after {
-    left: 115px;
-  }
-  .title:nth-of-type(7):after {
-    left: 131px;
-  }
 }
 
 .form
@@ -126,12 +92,6 @@
   margin-bottom: 42px;
 }
 
-@media only screen and (max-width: 599px) {
-  .checkbox p {
-    font-size: 1.4rem;
-  }
-}
-
 .checkbox input {
   width: 20px;
   height: 20px;
@@ -140,8 +100,42 @@
 }
 
 @media only screen and (max-width: 599px) {
+  .text {
+    margin-bottom: 48px;
+  }
+
+  .checkbox p {
+    font-size: 1.4rem;
+  }
+
   .checkbox input {
     width: 16px;
     height: 16px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .text {
+    margin-bottom: 18px;
+  }
+
+  .title:nth-of-type(2):after {
+    left: 131px;
+  }
+
+  .title:nth-of-type(4):after {
+    left: 61px;
+  }
+
+  .title:nth-of-type(5):after {
+    left: 115px;
+  }
+
+  .title:nth-of-type(7):after {
+    left: 131px;
+  }
+
+  .form {
+    padding: 80px 20px;
   }
 }

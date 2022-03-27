@@ -16,12 +16,6 @@
   padding: 110px 0 110px 50px;
 }
 
-@media only screen and (max-width: 599px) {
-  .bg {
-    padding: 50px 20px;
-  }
-}
-
 .box {
   max-width: 590px;
   padding: 50px 30px;
@@ -48,4 +42,10 @@
   line-height: 36px;
   color: #fff;
   font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 599px) {
+  .bg {
+    padding: 50px 20px;
+  }
 }

@@ -19,12 +19,6 @@
   margin-left: auto;
 }
 
-@media only screen and (max-width: 1024px) {
-  .post {
-    width: 100%;
-  }
-}
-
 .item {
   border-bottom: 1px solid #ddd;
   padding-bottom: 10px;
@@ -45,12 +39,6 @@
   margin-top: 9px;
 }
 
-@media only screen and (max-width: 599px) {
-  .postTitle {
-    font-size: 1.2rem;
-  }
-}
-
 .btn {
   width: 160px;
   height: 36px;
@@ -63,7 +51,17 @@
   margin-left: auto;
 }
 
+@media only screen and (max-width: 599px) {
+  .postTitle {
+    font-size: 1.2rem;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
+  .post {
+    width: 100%;
+  }
+
   .btn {
     margin-right: auto;
     margin-left: 0;

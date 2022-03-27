@@ -16,12 +16,6 @@
   transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
 }
 
-@media only screen and (max-width: 1024px) {
-  .menu {
-    width: 67.7vw;
-  }
-}
-
 .item {
   text-align: center;
   margin-bottom: 30px;
@@ -55,4 +49,10 @@
   color: #333;
   -webkit-transition: color 0.3s;
   transition: color 0.3s;
+}
+
+@media only screen and (max-width: 1024px) {
+  .menu {
+    width: 67.7vw;
+  }
 }

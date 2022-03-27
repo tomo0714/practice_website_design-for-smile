@@ -10,6 +10,18 @@
   margin-bottom: 42px;
 }
 
+.item {
+  margin-right: 50px;
+}
+
+.btn {
+  height: 20px;
+  width: 20px;
+  border: 1px solid #333;
+  margin-right: 10px;
+  vertical-align: -4px;
+}
+
 @media only screen and (max-width: 599px) {
   .radio {
     -webkit-box-orient: vertical;
@@ -22,22 +34,8 @@
     -ms-flex-align: start;
     align-items: flex-start;
   }
-}
 
-.item {
-  margin-right: 50px;
-}
-
-@media only screen and (max-width: 599px) {
   .item {
     margin-bottom: 14px;
   }
-}
-
-.btn {
-  height: 20px;
-  width: 20px;
-  border: 1px solid #333;
-  margin-right: 10px;
-  vertical-align: -4px;
 }

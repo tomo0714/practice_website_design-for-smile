@@ -1,4 +1,4 @@
-import { AboutByIndex } from "src/components/AboutByIndex";
+import { AboutUs } from "src/components/AboutUs";
 import { Company } from "src/components/Company";
 import { ContactByIndex } from "src/components/ContactByIndex";
 import { FirstView } from "src/components/FirstView";
@@ -15,7 +15,7 @@ export const Main = (props) => {
       <FirstView id={id} />
       {id === "Index" ? (
         <>
-          <AboutByIndex />
+          <AboutUs />
           <WorksAndCulture />
           <Topics />
           <ContactByIndex />

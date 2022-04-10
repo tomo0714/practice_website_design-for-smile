@@ -1,11 +1,17 @@
 import Link from "next/link";
-import styles from "src/components/Header/Header.module.css";
 import { Menu } from "src/components/Menu";
 
 export const Header = () => {
   return (
     <header>
-      <h1 className={styles.logo}>
+      <h1
+        className="sm:w-64 sm:top-8 sm:left-10 w-44 top-5 fixed left-5 z-10 "
+        // .logo.black svg path {
+        //   fill: #333;
+        //   -webkit-transition: fill 0.3s;
+        //   transition: fill 0.3s;
+        // }
+      >
         <Link href="/">
           <a>
             <svg
@@ -13,6 +19,7 @@ export const Header = () => {
               width="260"
               height="28.204"
               viewBox="0 0 260 28.204"
+              className="w-full"
             >
               <g id="site-logo" transform="translate(-59 -29)">
                 <path
@@ -40,7 +47,6 @@ export const Header = () => {
         </Link>
       </h1>
       <Menu />
-      <span className={styles.bg}></span>
     </header>
   );
 };

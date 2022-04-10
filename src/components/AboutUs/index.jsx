@@ -3,7 +3,7 @@ import Link from "next/link";
 export const AboutUs = () => {
   return (
     <section className="relative">
-      <div className="max-w-6xl mx-auto bg-about bg-cover bg-no-repeat bg-center sm:py-28 sm:pl-12 py-12 px-5">
+      <div className="mx-auto bg-about bg-cover bg-no-repeat bg-center sm:py-28 sm:pl-24 py-12 px-5">
         <div className="max-w-xl py-12 px-8 bg-white/[0.95]">
           <h2 className="text-3xl font-bold uppercase">About us</h2>
           <p className="my-7 leading-loose">
